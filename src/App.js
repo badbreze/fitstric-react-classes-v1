@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Blocco from './Blocco';
+import ListaPersone from './ListaPersone';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -16,7 +18,12 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
+        <Blocco persona={{nome: "Nome di prova"}}>
+          Children del blocco
+        </Blocco>
+        
+        <ListaPersone/>
       </header>
     </div>
   );
